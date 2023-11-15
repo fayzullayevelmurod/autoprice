@@ -14,7 +14,7 @@ button {
 .main_container {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 $Gilroy: 'Gilroy', sans-serif;
@@ -22,7 +22,7 @@ $Gilroy: 'Gilroy', sans-serif;
 // header
 header {
     .main_container {
-        padding: 55px 0;
+        padding: 55px 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -157,7 +157,99 @@ header {
     .card_wrapper {
 
         .card {
+            padding: 14px;
+            .card_img {
+                position: relative;
+                display: flex;
+                align-items: center;
+                border: 1px solid #D6D5D5FF;
+                margin-bottom: 24px;
+
+                .slider_btn_left, 
+                .slider_btn_right {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 2;
+                    background-color: #908E8FFF;
+                }
+
+                .slider_btn_right {
+                    left: auto;
+                    right: 0;
+                    transform: rotate(180deg);
+                }
+
+                .mySwiper {
+                    background:red;
+                    z-index: 1;
+                    
+                }
+            }
             
+            .card_text {
+
+                h2 {
+                    font-size: 37px;
+                    color: #000000;
+                    font-weight: bold;
+                    font-family: $Gilroy;
+                    margin-bottom: 23px;
+                }
+
+                .card_list {
+                    margin-bottom: 16px;
+                    display: flex;
+                    align-items: start;
+                }
+
+                ul {
+                    li {
+                        white-space: nowrap;
+                        width: 110px;
+                        span {
+                            margin-right: 11px;
+                            color: #a81610;
+                        }
+
+                        font-size: 21px;
+                        color: #000;
+                        font-weight: 500;
+                        font-family: $Gilroy;
+                    }
+                }
+
+                button {
+                    white-space: nowrap;
+                    width: 266px;  
+                    padding: 18px;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-family: $Gilroy;
+                }
+
+                .btn_red {
+                    background-color: #A51E22FF;
+                }
+
+                .btn_black {
+                    background-color: #1A1A20FF;
+                }
+
+                .btn_grey {
+                    background-color: #909090FF;
+                }
+            }
         }
 
         .card_red {

@@ -14,11 +14,11 @@ button {
 .main_container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 header .main_container {
-  padding: 55px 0;
+  padding: 55px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -128,6 +128,84 @@ header .main_container .request_call {
   padding: 22px 78px;
   border: 1px solid #a81610;
   background-color: transparent;
+}
+#cards .card_wrapper .card {
+  padding: 14px;
+}
+#cards .card_wrapper .card .card_img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d6d5d5;
+  margin-bottom: 24px;
+}
+#cards .card_wrapper .card .card_img .slider_btn_left,
+#cards .card_wrapper .card .card_img .slider_btn_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: #908e8f;
+}
+#cards .card_wrapper .card .card_img .slider_btn_right {
+  left: auto;
+  right: 0;
+  transform: rotate(180deg);
+}
+#cards .card_wrapper .card .card_img .mySwiper {
+  background: red;
+  z-index: 1;
+}
+#cards .card_wrapper .card .card_text h2 {
+  font-size: 37px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Gilroy", sans-serif;
+  margin-bottom: 23px;
+}
+#cards .card_wrapper .card .card_text .card_list {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: start;
+}
+#cards .card_wrapper .card .card_text ul li {
+  white-space: nowrap;
+  width: 110px;
+  font-size: 21px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+}
+#cards .card_wrapper .card .card_text ul li span {
+  margin-right: 11px;
+  color: #a81610;
+}
+#cards .card_wrapper .card .card_text button {
+  white-space: nowrap;
+  width: 266px;
+  padding: 18px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Gilroy", sans-serif;
+}
+#cards .card_wrapper .card .card_text .btn_red {
+  background-color: #a51e22;
+}
+#cards .card_wrapper .card .card_text .btn_black {
+  background-color: #1a1a20;
+}
+#cards .card_wrapper .card .card_text .btn_grey {
+  background-color: #909090;
 }
 #cards .card_wrapper .card_red {
   border: 1px solid #bebdbd;
