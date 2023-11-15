@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.main_container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header .main_container {
+  padding: 55px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .main_container nav {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+}
+header .main_container nav a {
+  font-size: 17px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+}
+header .main_container .contact h4 {
+  margin-bottom: 6px;
+  font-size: 17px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+}
+header .main_container .contact h4 span {
+  margin-right: 5px;
+  color: green;
+  font-size: 30px;
+}
+header .main_container .contact h4 b {
+  font-weight: bold;
+}
+header .main_container .contact a {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #30b839;
+}
+header .main_container .request_call {
+  border: none;
+  cursor: pointer;
+  padding: 18px 29px;
+  font-size: 21px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  background-color: #a81610;
+}
+
+#cards {
+  background-color: #f3f3f3;
+}
+#cards .cards_title {
+  padding-bottom: 66px;
+  padding-top: 78px;
+}
+#cards .cards_title h1 {
+  font-size: 49px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Gilroy", sans-serif;
+  text-align: left;
+  margin-bottom: 30px;
+}
+#cards .cards_title p {
+  font-size: 17px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  margin-bottom: 53px;
+}
+#cards .cards_title .cards_title_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#cards .cards_title .btn_one {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+#cards .cards_title .btn_one .red_btn {
+  font-size: 21px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  padding: 22px 119px;
+  background-color: #a81610;
+}
+#cards .cards_title .btn_one button {
+  font-size: 21px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  padding: 22px 78px;
+  border: 1px solid #a81610;
+  background-color: transparent;
+}
+#cards .cards_title .btn_two button {
+  font-size: 21px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  padding: 22px 78px;
+  border: 1px solid #a81610;
+  background-color: transparent;
+}
+#cards .card_wrapper .card_red {
+  border: 1px solid #bebdbd;
+  padding: 41px;
+  background-color: #a51f23;
+}
+#cards .card_wrapper .card_red h2 {
+  font-size: 37px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Gilroy", sans-serif;
+  margin-bottom: 70px;
+}
+#cards .card_wrapper .card_red .card_red_block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 56px;
+}
+#cards .card_wrapper .card_red .card_red_block .card_red_block_img {
+  width: 51px;
+  text-align: center;
+}
+#cards .card_wrapper .card_red .card_red_block span {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+}
+#cards .card_wrapper .card_red button {
+  padding: 20px 0;
+  background-color: #fff;
+  width: 100%;
+  font-size: 28px;
+  color: #231f20;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+}/*# sourceMappingURL=style.css.map */

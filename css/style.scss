@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.main_container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+$Gilroy: 'Gilroy', sans-serif;
+
+// header
+header {
+    .main_container {
+        padding: 55px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 63px;
+            a {
+                font-size: 17px;
+                color: #000000;
+                font-weight: 500;
+                font-family: $Gilroy;
+            }
+        }
+
+        .contact {
+            
+            h4 {
+                margin-bottom: 6px;
+                font-size: 17px;
+                color: #000000;
+                font-weight: 500;
+                font-family: $Gilroy;
+
+                span {
+                    margin-right: 5px;
+                    color: green;
+                    font-size: 30px;
+
+                }
+
+                b {
+                    font-weight: bold;
+                }
+            }
+
+            a {
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px;
+                width: 43px;
+                height: 43px;
+                border-radius: 50%;
+                background-color: #30B839FF;
+            }
+
+        }
+        .request_call {
+            border: none;
+            cursor: pointer;
+            padding: 18px 29px;
+            font-size: 21px;
+            color: #fff;
+            font-weight: 500;
+            font-family: $Gilroy;
+            background-color: #a81610;
+        }
+    }
+}
+// header
+
+// cards
+#cards {
+    background-color: #F3F3F3FF;
+    .cards_title {
+        padding-bottom: 66px;
+        padding-top: 78px;
+        h1 {
+            font-size: 49px;
+            color: #000000;
+            font-weight: bold;
+            font-family: $Gilroy;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 17px;
+            color: #000000;
+            font-weight: 500;
+            font-family: $Gilroy;
+            margin-bottom: 53px;
+        }
+
+        .cards_title_btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .btn_one {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+
+            .red_btn {
+                font-size: 21px;
+                color: #fff;
+                font-weight: 500;
+                font-family: $Gilroy;
+                padding: 22px 119px;
+                background-color: #a81610;
+            }
+
+            button {
+                font-size: 21px;
+                color: #000;
+                font-weight: 500;
+                font-family: $Gilroy;
+                padding: 22px 78px;
+                border: 1px solid #a81610;
+                background-color: transparent;
+            }
+        }
+
+        .btn_two {
+            button {
+                font-size: 21px;
+                color: #000;
+                font-weight: 500;
+                font-family: $Gilroy;
+                padding: 22px 78px;
+                border: 1px solid #a81610;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .card_wrapper {
+
+        .card {
+            
+        }
+
+        .card_red {
+            border: 1px solid #BEBDBDFF;
+            padding: 41px;
+            background-color: #a51f23;
+
+            h2 {
+                font-size: 37px;
+                color: #ffffff;
+                font-weight: bold;
+                font-family: $Gilroy;
+                margin-bottom: 70px;
+            }
+
+            .card_red_block {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-bottom: 56px;
+
+                .card_red_block_img {
+                    width: 51px;
+                    text-align: center;
+                }
+
+                span {
+                    font-size: 25px;
+                    color: #ffffff;
+                    font-weight: 500;
+                    font-family: $Gilroy;
+                }
+            }
+
+            button {
+                padding: 20px 0;
+                background-color: #fff;
+                width: 100%;
+                font-size: 28px;
+                color: #231f20;
+                font-weight: 500;
+                font-family: $Gilroy;
+            }
+        }
+    }
+}
+// cards
+
