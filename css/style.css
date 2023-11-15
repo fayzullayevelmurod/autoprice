@@ -129,10 +129,18 @@ header .main_container .request_call {
   border: 1px solid #a81610;
   background-color: transparent;
 }
+#cards .card_wrapper .main_container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
 #cards .card_wrapper .card {
+  width: calc(33.3333333333% - 20px);
   padding: 14px;
+  border: 1px solid #d6d5d5;
 }
 #cards .card_wrapper .card .card_img {
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -140,7 +148,9 @@ header .main_container .request_call {
   margin-bottom: 24px;
 }
 #cards .card_wrapper .card .card_img .slider_btn_left,
-#cards .card_wrapper .card .card_img .slider_btn_right {
+#cards .card_wrapper .card .card_img .slider_btn_right,
+#cards .card_wrapper .card .card_img .slider_btn_left_one,
+#cards .card_wrapper .card .card_img .slider_btn_right_one {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,18 +168,36 @@ header .main_container .request_call {
 #cards .card_wrapper .card .card_img .slider_btn_right {
   left: auto;
   right: 0;
+  top: 45%;
+  transform: rotate(180deg);
+}
+#cards .card_wrapper .card .card_img .slider_btn_right_one {
+  left: auto;
+  right: 0;
+  top: 45%;
   transform: rotate(180deg);
 }
 #cards .card_wrapper .card .card_img .mySwiper {
-  background: red;
   z-index: 1;
+}
+#cards .card_wrapper .card .card_img .mySwiper img {
+  width: 100%;
+}
+#cards .card_wrapper .card .card_img .mySwiperOne {
+  z-index: 1;
+}
+#cards .card_wrapper .card .card_img .mySwiperOne img {
+  width: 100%;
+}
+#cards .card_wrapper .card .card_text {
+  padding: 0 0 0 6px;
 }
 #cards .card_wrapper .card .card_text h2 {
   font-size: 37px;
   color: #000000;
   font-weight: bold;
   font-family: "Gilroy", sans-serif;
-  margin-bottom: 23px;
+  margin-bottom: 10px;
 }
 #cards .card_wrapper .card .card_text .card_list {
   margin-bottom: 16px;
@@ -189,6 +217,7 @@ header .main_container .request_call {
   color: #a81610;
 }
 #cards .card_wrapper .card .card_text button {
+  margin-bottom: 8px;
   white-space: nowrap;
   width: 266px;
   padding: 18px;

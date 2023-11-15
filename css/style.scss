@@ -156,9 +156,19 @@ header {
 
     .card_wrapper {
 
+        .main_container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+
+        }
+
         .card {
+            width: calc(100% /3 - 20px);
             padding: 14px;
+            border: 1px solid #D6D5D5FF;
             .card_img {
+                width: 100%;
                 position: relative;
                 display: flex;
                 align-items: center;
@@ -166,7 +176,9 @@ header {
                 margin-bottom: 24px;
 
                 .slider_btn_left, 
-                .slider_btn_right {
+                .slider_btn_right,
+                .slider_btn_left_one ,
+                .slider_btn_right_one {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -185,24 +197,46 @@ header {
                 .slider_btn_right {
                     left: auto;
                     right: 0;
+                    top: 45%;
+                    transform: rotate(180deg);
+                }
+
+                .slider_btn_right_one {
+                    left: auto;
+                    right: 0;
+                    top: 45%;
                     transform: rotate(180deg);
                 }
 
                 .mySwiper {
-                    background:red;
                     z-index: 1;
+
+                    img {
+                        width: 100%;
+                    }
+                    
+                }
+
+                .mySwiperOne {
+                    z-index: 1;
+
+                    img {
+                        width: 100%;
+                    }
                     
                 }
             }
             
             .card_text {
 
+                padding: 0 0 0 6px;
+
                 h2 {
                     font-size: 37px;
                     color: #000000;
                     font-weight: bold;
                     font-family: $Gilroy;
-                    margin-bottom: 23px;
+                    margin-bottom: 10px;
                 }
 
                 .card_list {
@@ -228,6 +262,7 @@ header {
                 }
 
                 button {
+                    margin-bottom: 8px;
                     white-space: nowrap;
                     width: 266px;  
                     padding: 18px;
