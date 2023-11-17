@@ -189,6 +189,11 @@
 }
 
 @media (max-width: 576px) {
+    header {
+        .main_container {
+            padding: 35px 0;
+        }
+    }
     #clients {
         .main_container {
             padding: 0 30px;
@@ -220,4 +225,12 @@
         }
     }
     
+}
+
+@media (max-width: 480px) {
+    #clients {
+        .main_container {
+            padding: 0 10px;
+        }
+    }
 }

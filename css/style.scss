@@ -458,6 +458,7 @@ header {
             .popular_brand ,
             .popular_model {
                 display: flex;
+                align-items: center;
 
                 .brand_title {
                     font-size: 15px;
@@ -489,6 +490,157 @@ header {
     }
 }
 // clients
+
+
+// contact
+#contact {
+
+    background-color: #F4F4F4FF;
+    padding: 122px 0;
+
+    .main_container {
+        background-image: url('../images/contact_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        .contact_img {
+            width: 37%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .contact_text {
+            position: relative;
+            z-index: 2;
+            padding: 98px;
+            h2 {
+                max-width: 726px;
+                font-size: 56px;
+                color: #000000;
+                font-weight: 400;
+                font-family: $Gilroy;
+                text-align: left;
+                margin-bottom: 52px;
+
+            }
+
+            p {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                font-size: 17px;
+                color: #000000;
+                font-weight: 500;
+                font-family: $Gilroy;
+                margin-bottom: 27px;
+
+                input {
+                    cursor: pointer;
+                    width: 20px;
+                    height: 20px;
+                    accent-color: #A81610FF;
+                }
+            }
+            form {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                input {
+                    font-size: 20px;
+                    color: #000000;
+                    font-weight: 500;
+                    font-family: $Gilroy;
+                    padding: 48px;
+                    height: 101px;
+                    width: 345px;
+                    border: 1px solid #C3C1C1FF;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 72px;
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: 500;
+                    font-family: $Gilroy;
+                    height: 101px;
+                    width: 345px;
+                    border: none;
+                    background-color: #A81610FF;
+                }
+            }
+
+            .checkbox_text {
+                margin-top: 24px;
+            }
+
+        }
+
+        .contact_bottom {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+            h4 {
+                margin-bottom: 6px;
+                font-size: 23px;
+                color: #000000;
+                font-weight: 500;
+                font-family: $Gilroy;
+
+                span {
+                    margin-right: 5px;
+                    color: green;
+                    font-size: 30px;
+
+                }
+
+                b {
+                    font-weight: bold;
+                }
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px;
+                width: 43px;
+                height: 43px;
+                border-radius: 50%;
+                background-color: #30B839FF;
+            }
+
+        }
+        
+        h3 {
+            text-align: right;
+            position: absolute;
+            top: 192px;
+            right: 30%;
+            margin-bottom: 6px;
+            font-size: 23px;
+            color: #000000;
+            font-family: $Gilroy;
+            font-weight: 500;
+
+            span {
+                display: block;
+                font-weight: 300;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+// contact
 
 
 // footer

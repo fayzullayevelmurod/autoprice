@@ -376,6 +376,7 @@ header .main_container .request_call {
 #clients .main_container .popular_brand,
 #clients .main_container .popular_model {
   display: flex;
+  align-items: center;
 }
 #clients .main_container .popular_brand .brand_title,
 #clients .main_container .popular_model .brand_title {
@@ -401,6 +402,134 @@ header .main_container .request_call {
   font-family: "Gilroy", sans-serif;
   color: #707070;
   background-color: #f5f8f9;
+}
+
+#contact {
+  background-color: #f4f4f4;
+  padding: 122px 0;
+}
+#contact .main_container {
+  background-image: url("../images/contact_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#contact .main_container .contact_img {
+  width: 37%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#contact .main_container .contact_text {
+  position: relative;
+  z-index: 2;
+  padding: 98px;
+}
+#contact .main_container .contact_text h2 {
+  max-width: 726px;
+  font-size: 56px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  text-align: left;
+  margin-bottom: 52px;
+}
+#contact .main_container .contact_text p {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 17px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  margin-bottom: 27px;
+}
+#contact .main_container .contact_text p input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  accent-color: #a81610;
+}
+#contact .main_container .contact_text form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#contact .main_container .contact_text form input {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  padding: 48px;
+  height: 101px;
+  width: 345px;
+  border: 1px solid #c3c1c1;
+}
+#contact .main_container .contact_text form input:focus {
+  outline: none;
+}
+#contact .main_container .contact_text form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  height: 101px;
+  width: 345px;
+  border: none;
+  background-color: #a81610;
+}
+#contact .main_container .contact_text .checkbox_text {
+  margin-top: 24px;
+}
+#contact .main_container .contact_bottom {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+#contact .main_container .contact_bottom h4 {
+  margin-bottom: 6px;
+  font-size: 23px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+}
+#contact .main_container .contact_bottom h4 span {
+  margin-right: 5px;
+  color: green;
+  font-size: 30px;
+}
+#contact .main_container .contact_bottom h4 b {
+  font-weight: bold;
+}
+#contact .main_container .contact_bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #30b839;
+}
+#contact .main_container h3 {
+  text-align: right;
+  position: absolute;
+  top: 192px;
+  right: 30%;
+  margin-bottom: 6px;
+  font-size: 23px;
+  color: #000000;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+}
+#contact .main_container h3 span {
+  display: block;
+  font-weight: 300;
+  margin-top: 15px;
 }
 
 footer {
@@ -576,6 +705,9 @@ footer .main_container .footer_text p {
   }
 }
 @media (max-width: 576px) {
+  header .main_container {
+    padding: 35px 0;
+  }
   #clients .main_container {
     padding: 0 30px;
   }
@@ -591,5 +723,10 @@ footer .main_container .footer_text p {
   }
   #cards .pagination .numbers {
     gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  #clients .main_container {
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=style.css.map */
