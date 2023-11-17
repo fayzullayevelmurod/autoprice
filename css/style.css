@@ -41,6 +41,15 @@ button {
   transform: translate(-50%, -50%);
   width: 760px;
 }
+.modal_red .close_btn {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+  width: 25px;
+  opacity: 0.5;
+}
 .modal_red .modal_red_img {
   width: 100%;
   height: 100%;
@@ -956,6 +965,7 @@ footer .main_container .footer_text p {
     padding: 30px;
   }
   .modal_red .modal_red_text h1 {
+    margin-right: 25px;
     font-size: 30px;
   }
   .modal_red .modal_red_text .modal_name {
