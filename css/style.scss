@@ -22,6 +22,7 @@ $Gilroy: 'Gilroy', sans-serif;
 
 // modal_red
 .modal_red_bg {
+    display: none;
     position: fixed;
     z-index: 14;
     width: 100%;
@@ -30,6 +31,8 @@ $Gilroy: 'Gilroy', sans-serif;
 }
 
 .modal_red {
+    display: none;
+    background-color: #DE4139FF;
     position: relative;
     z-index: 15;
     position: fixed;
@@ -762,6 +765,10 @@ header {
                 margin-top: 15px;
             }
         }
+    }
+
+    .mobile_block {
+        display: none;
     }
 }
 // contact

@@ -131,6 +131,17 @@
         }
     }
 
+    #contact {
+        .main_container {
+            .contact_text {
+                h2 {
+                    max-width: 550px;
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+
     footer {
         .main_container {
             flex-direction: column;
@@ -138,6 +149,67 @@
             .footer_logo,
             .footer_contact {
                 margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    #contact {
+        padding: 55px 0 0 0;
+        .desktop {
+            background-image: none;
+            .contact_img {
+                display: none;
+            }
+
+            .desktop_name {
+                display: none;
+            }
+
+             .contact_text {
+
+                h2 {
+                    text-align: center;
+                    margin: 0 auto;
+
+                }
+
+                p {
+                    margin-top: 70px;
+                    justify-content: center;
+                    align-items: start;
+                    input {
+                        width: 40px;
+                    }
+                }
+
+                .checkbox_text {
+                    max-width: 345px;
+                    margin: 30px auto 40px auto;
+                }
+
+                form {
+                    flex-direction: column;
+                }
+             }
+
+             .contact_bottom {  
+                gap: 27px;
+                flex-direction: column-reverse;
+             }
+        }
+
+        .mobile_block {
+            display: block;
+            height: 550px;
+
+            h3 {
+                right: 420px;
+            }
+
+            .contact_img {
+                width: 456px;
             }
         }
     }
@@ -186,6 +258,48 @@
             }
         }
     }
+
+    #contact {
+        overflow-x: hidden;
+
+        .main_container {
+            .contact_text {
+                padding: 40px;
+
+                h2 {
+                    font-size: 40px;
+                }
+            }
+
+            .contact_bottom {
+                margin-bottom: 20px;
+                h4 {
+                    max-width: 225px;
+                    text-align: center;
+                    font-size: 30px;
+                }
+            
+            }
+        }
+
+        .mobile_block {
+
+
+            .contact_img {
+                right: -100px;
+            }
+
+            h3 {
+                top: 100px;
+                right: 250px;
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+
+
+    }
 }
 
 @media (max-width: 576px) {
@@ -231,6 +345,13 @@
     #clients {
         .main_container {
             padding: 0 10px;
+        }
+    }
+    #contact {
+        .mobile_block {
+            h3 {
+                right: 215px;
+            }
         }
     }
 }
