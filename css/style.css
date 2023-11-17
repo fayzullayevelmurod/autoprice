@@ -579,4 +579,17 @@ footer .main_container .footer_text p {
   #clients .main_container {
     padding: 0 30px;
   }
+  #cards .card_wrapper .card .card_text {
+    gap: 8px;
+  }
+  #cards .card_wrapper .card .card_text ul li {
+    font-size: 15px;
+    width: 100px;
+  }
+  #cards .card_wrapper .card .card_text button {
+    font-size: 13px;
+  }
+  #cards .pagination .numbers {
+    gap: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

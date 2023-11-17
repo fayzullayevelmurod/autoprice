@@ -194,5 +194,30 @@
             padding: 0 30px;
         }
     }
+
+    #cards {
+        .card_wrapper {
+            .card {
+                .card_text {
+                    gap: 8px;
+                    ul {
+                        li {
+                            font-size: 15px;
+                            width: 100px;
+                        }
+                    }
+
+                    button {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .pagination {
+            .numbers {
+                gap: 15px;
+            }
+        }
+    }
     
 }
