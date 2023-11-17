@@ -960,16 +960,19 @@ footer .main_container .footer_text p {
 @media (max-width: 540px) {
   .modal_red {
     width: 95%;
+    height: 737px;
   }
   .modal_red .modal_red_text {
     padding: 30px;
+    height: 333px;
   }
   .modal_red .modal_red_text h1 {
     margin-right: 25px;
-    font-size: 30px;
+    font-size: 25px;
   }
   .modal_red .modal_red_text .modal_name {
     left: 225px;
+    top: 420px;
   }
 }
 @media (max-width: 480px) {
