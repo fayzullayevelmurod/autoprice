@@ -26,6 +26,10 @@ button {
   background-color: rgba(35, 31, 32, 0.75);
 }
 
+.modal_red_bg.active {
+  display: block;
+}
+
 .modal_red {
   display: none;
   background-color: #de4139;
@@ -122,6 +126,10 @@ button {
 }
 .modal_red .modal_red_text .button_underline p a {
   border-bottom: 1px dotted rgb(120, 120, 120);
+}
+
+.modal_red.active {
+  display: block;
 }
 
 header .main_container {
@@ -891,6 +899,33 @@ footer .main_container .footer_text p {
   #contact .mobile_block h3 span {
     font-size: 12px;
   }
+  .modal_red {
+    overflow: hidden;
+    width: 480px;
+    height: 800px;
+  }
+  .modal_red .modal_red_text {
+    padding: 45px;
+    width: 100%;
+    height: 402px;
+    top: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .modal_red .modal_red_text h1 {
+    font-size: 35px;
+  }
+  .modal_red .modal_red_text .modal_name {
+    top: 485px;
+    left: 250px;
+  }
+  .modal_red .modal_red_img {
+    width: auto;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+  }
 }
 @media (max-width: 576px) {
   header .main_container {
@@ -911,6 +946,20 @@ footer .main_container .footer_text p {
   }
   #cards .pagination .numbers {
     gap: 15px;
+  }
+}
+@media (max-width: 540px) {
+  .modal_red {
+    width: 95%;
+  }
+  .modal_red .modal_red_text {
+    padding: 30px;
+  }
+  .modal_red .modal_red_text h1 {
+    font-size: 30px;
+  }
+  .modal_red .modal_red_text .modal_name {
+    left: 225px;
   }
 }
 @media (max-width: 480px) {

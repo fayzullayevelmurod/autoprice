@@ -30,6 +30,10 @@ $Gilroy: 'Gilroy', sans-serif;
     background-color: rgba(35,31,32,0.75);
 }
 
+.modal_red_bg.active {
+    display: block;
+}
+
 .modal_red {
     display: none;
     background-color: #DE4139FF;
@@ -143,6 +147,11 @@ $Gilroy: 'Gilroy', sans-serif;
         }
     }
 
+
+}
+
+.modal_red.active {
+    display: block;
 }
 // modal_red
 

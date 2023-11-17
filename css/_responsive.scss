@@ -300,6 +300,41 @@
 
 
     }
+
+    .modal_red {
+        overflow: hidden;
+        width: 480px;
+        height: 800px;
+
+        .modal_red_text {
+            padding: 45px;
+            width: 100%;
+            height: 402px;
+            top: 0;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .modal_name {
+                top: 485px;
+                left: 250px;
+            }
+            
+        }
+        .modal_red_img {
+            width: auto;
+            height: 400px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+
+
 }
 
 @media (max-width: 576px) {
@@ -339,6 +374,24 @@
         }
     }
     
+}
+
+@media (max-width: 540px) {
+    .modal_red {
+        width: 95%;
+
+        .modal_red_text {
+            padding: 30px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .modal_name {
+                left: 225px;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
