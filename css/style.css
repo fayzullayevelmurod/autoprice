@@ -18,7 +18,7 @@ button {
 }
 
 header .main_container {
-  padding: 55px 15px;
+  padding: 50px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -131,11 +131,14 @@ header .main_container .request_call {
 }
 #cards .card_wrapper .main_container {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 38px;
 }
 #cards .card_wrapper .card {
-  width: calc(33.3333333333% - 20px);
+  box-shadow: 2px 4px 13px 0px rgba(35, 31, 32, 0.75);
+  -webkit-box-shadow: 2px 4px 13px 0px rgba(35, 31, 32, 0.75);
+  -moz-box-shadow: 2px 4px 13px 0px rgba(35, 31, 32, 0.75);
+  width: calc(33.3333333333% - 25.3333333333px);
   padding: 14px;
   border: 1px solid #d6d5d5;
 }
@@ -190,7 +193,51 @@ header .main_container .request_call {
   width: 100%;
 }
 #cards .card_wrapper .card .card_text {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
   padding: 0 0 0 6px;
+}
+#cards .card_wrapper .card .card_text .card_text_left {
+  width: 267px;
+}
+#cards .card_wrapper .card .card_text .card_text_left .card_list {
+  margin-top: 30px;
+}
+#cards .card_wrapper .card .card_text .card_text_left .card_list .circle_in {
+  position: relative;
+}
+#cards .card_wrapper .card .card_text .card_text_left .card_list .circle_in .circle {
+  position: absolute;
+  right: -10px;
+  top: 3px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #efe8eb;
+}
+#cards .card_wrapper .card .card_text .card_text_right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  background-color: #ededed;
+}
+#cards .card_wrapper .card .card_text .card_text_right ul {
+  width: 100%;
+  padding: 25px 7px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 35px;
+}
+#cards .card_wrapper .card .card_text .card_text_right li {
+  display: flex;
+  white-space: wrap;
+}
+#cards .card_wrapper .card .card_text .card_text_right li span {
+  margin-right: 5px;
 }
 #cards .card_wrapper .card .card_text h2 {
   font-size: 37px;
@@ -217,7 +264,7 @@ header .main_container .request_call {
   color: #a81610;
 }
 #cards .card_wrapper .card .card_text button {
-  margin-bottom: 8px;
+  margin-top: 10px;
   white-space: nowrap;
   width: 266px;
   padding: 18px;
@@ -237,6 +284,8 @@ header .main_container .request_call {
   background-color: #909090;
 }
 #cards .card_wrapper .card_red {
+  box-shadow: none;
+  width: calc(33.3333333333% - 25.3333333333px);
   border: 1px solid #bebdbd;
   padding: 41px;
   background-color: #a51f23;
@@ -272,4 +321,262 @@ header .main_container .request_call {
   color: #231f20;
   font-weight: 500;
   font-family: "Gilroy", sans-serif;
+}
+#cards .pagination {
+  margin-top: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#cards .pagination .more_btn {
+  margin-top: 10px;
+  white-space: nowrap;
+  width: 266px;
+  padding: 18px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Gilroy", sans-serif;
+  background-color: #a51e22;
+}
+#cards .pagination .numbers {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#cards .pagination .numbers button {
+  font-family: "Gilroy", sans-serif;
+  color: rgb(35, 31, 32);
+  line-height: 0.947;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+#clients {
+  background-color: #d8d8d8;
+  padding: 68px 0;
+}
+#clients .main_container h2 {
+  text-align: center;
+  font-size: 35px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Gilroy", sans-serif;
+  margin-bottom: 50px;
+}
+#clients .main_container .popular_brand {
+  margin-bottom: 22px;
+}
+#clients .main_container .popular_brand .brand_links {
+  padding: 8px 17px;
+}
+#clients .main_container .popular_brand,
+#clients .main_container .popular_model {
+  display: flex;
+}
+#clients .main_container .popular_brand .brand_title,
+#clients .main_container .popular_model .brand_title {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Gilroy", sans-serif;
+  color: #000;
+  margin-right: 20px;
+}
+#clients .main_container .brand_links,
+#clients .main_container .brand_links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#clients .main_container .brand_links .brand_link,
+#clients .main_container .brand_links .brand_link {
+  border-radius: 20px;
+  padding: 8px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Gilroy", sans-serif;
+  color: #707070;
+  background-color: #f5f8f9;
+}
+
+footer {
+  background-color: #d8d8d8;
+  padding: 47px 0;
+}
+footer .main_container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+footer .main_container .footer_logo {
+  max-width: 292px;
+}
+footer .main_container .footer_logo p {
+  margin-top: 38px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  color: #000;
+}
+footer .main_container .footer_contact {
+  max-width: 404px;
+}
+footer .main_container .footer_contact h4 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Gilroy", sans-serif;
+  color: #000;
+  margin-bottom: 28px;
+}
+footer .main_container .footer_contact p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  color: #000;
+}
+footer .main_container .footer_text {
+  max-width: 315px;
+}
+footer .main_container .footer_text p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Gilroy", sans-serif;
+  color: #000;
+}
+
+@media (max-width: 1525px) {
+  #cards .card_wrapper .card .card_text .card_text_right li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1425px) {
+  #cards .card_wrapper {
+    gap: 20px;
+  }
+  #cards .card_wrapper .card .card_text h2 {
+    font-size: 30px;
+  }
+  #cards .card_wrapper .card .card_text .card_text_right {
+    width: 124px;
+  }
+  #cards .card_wrapper .card .card_text .card_text_right li {
+    font-size: 15px;
+  }
+  #cards .card_wrapper .card .card_text button {
+    white-space: wrap;
+    width: 100%;
+  }
+  #cards .card_wrapper .card .card_text .card_text_left {
+    width: 100%;
+  }
+  #cards .card_wrapper .card_red {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #cards .card_wrapper .card_red h2 {
+    margin-bottom: 25px;
+  }
+  #cards .card_wrapper .card_red .card_red_block {
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  #cards .card_wrapper .card_red button {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1300px) {
+  header .main_container {
+    flex-direction: column;
+  }
+  header .main_container .logo {
+    margin-bottom: 75px;
+  }
+  header .main_container nav {
+    margin-bottom: 44px;
+  }
+  header .main_container .contact {
+    padding: 36px 0 22px 0;
+    text-align: center;
+    width: 100vw;
+    background-color: #f4f4f4;
+  }
+  header .main_container .request_call_in {
+    padding-bottom: 48px;
+    width: 100vw;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  #cards .cards_title {
+    padding: 0;
+  }
+  #cards .cards_title h1,
+  #cards .cards_title p {
+    text-align: center;
+  }
+  #cards .cards_title .main_container {
+    text-align: center;
+    padding: 47px 15px;
+    background-color: #fff;
+  }
+  #cards .cards_title .cards_title_btns {
+    flex-direction: column;
+  }
+  #cards .cards_title .cards_title_btns button {
+    margin-bottom: 23px;
+  }
+  #cards .card_wrapper .main_container {
+    justify-content: center;
+    gap: 15px;
+  }
+  #cards .card_wrapper .card,
+  #cards .card_wrapper .card_red {
+    width: calc(50% - 20px);
+  }
+  footer .main_container {
+    flex-direction: column;
+  }
+  footer .main_container .footer_logo,
+  footer .main_container .footer_contact {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 993px) {
+  #clients .main_container .popular_brand,
+  #clients .main_container .popular_model {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #clients .main_container .popular_brand .brand_title,
+  #clients .main_container .popular_model .brand_title {
+    margin-bottom: 31px;
+  }
+  #clients .main_container .popular_brand .brand_links,
+  #clients .main_container .popular_model .brand_links {
+    justify-content: center;
+  }
+}
+@media (max-width: 850px) {
+  #cards .cards_title .btn_one {
+    flex-direction: column;
+    gap: 0;
+  }
+  #cards .cards_title button {
+    width: 354px;
+  }
+  #cards .card_wrapper .main_container .card,
+  #cards .card_wrapper .main_container .card_red {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  #clients .main_container {
+    padding: 0 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

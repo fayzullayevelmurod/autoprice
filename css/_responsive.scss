@@ -1,0 +1,198 @@
+@media (max-width: 1525px) {
+    #cards {
+        .card_wrapper {
+            .card {
+                .card_text {
+
+                    .card_text_right {
+                        li {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1425px) {
+    #cards {
+        .card_wrapper {
+            gap: 20px;
+            .card {
+                .card_text {
+                    h2 {
+                        font-size: 30px;
+                    }
+
+                    .card_text_right {
+                        width: 124px;
+                        li {
+                            font-size: 15px;
+                        }
+                    }
+
+                    button {
+                        white-space: wrap;
+                        width: 100%;
+                    }
+
+                    .card_text_left {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            .card_red {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h2 {
+                    margin-bottom: 25px;
+                }
+
+                .card_red_block {
+                    gap: 25px;
+                    margin-bottom: 30px;
+                }
+
+                button {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    header {
+        .main_container {
+            flex-direction: column;
+
+            .logo {
+                margin-bottom: 75px;
+            }
+
+            nav {
+                margin-bottom: 44px;
+            }
+
+            .contact {
+                padding: 36px 0 22px 0;
+                text-align: center;
+                width: 100vw;
+                background-color: #F4F4F4FF;
+            }
+
+            .request_call_in {
+                padding-bottom: 48px;
+                width: 100vw;
+                text-align: center;
+                background-color: #F4F4F4FF;
+            }
+        }
+    }
+
+    #cards {
+        .cards_title {
+            padding: 0;
+
+            h1 ,
+            p {
+                text-align: center;
+            }
+            
+            .main_container {
+                text-align: center;
+                padding: 47px 15px;
+                background-color: #fff;
+            }
+
+            .cards_title_btns {
+                flex-direction: column;
+
+                button {
+                    margin-bottom: 23px;
+                }
+            }
+        }
+        .card_wrapper { 
+
+            .main_container {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .card,
+            .card_red { 
+                width: calc(100% / 2 - 20px);
+            }
+        }
+    }
+
+    footer {
+        .main_container {
+            flex-direction: column;
+
+            .footer_logo,
+            .footer_contact {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 993px) {
+    #clients {
+        .main_container {
+            .popular_brand,
+            .popular_model {
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+
+                .brand_title {
+                    margin-bottom: 31px;
+                }
+
+                .brand_links {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    #cards {
+
+        .cards_title {
+            .btn_one {
+                flex-direction: column;
+                gap: 0;
+            }
+
+            button {
+                width: 354px;
+            }
+        }
+        .card_wrapper {
+            .main_container {
+                .card ,
+                .card_red {
+                    width: calc(100%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #clients {
+        .main_container {
+            padding: 0 30px;
+        }
+    }
+    
+}

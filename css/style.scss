@@ -22,7 +22,7 @@ $Gilroy: 'Gilroy', sans-serif;
 // header
 header {
     .main_container {
-        padding: 55px 15px;
+        padding: 50px 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -158,13 +158,18 @@ header {
 
         .main_container {
             display: flex;
-            justify-content: center;
-            gap: 40px;
+            // justify-content: center;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 38px;
 
         }
 
         .card {
-            width: calc(100% /3 - 20px);
+            box-shadow: 2px 4px 13px 0px rgba(35,31,32,0.75);
+            -webkit-box-shadow: 2px 4px 13px 0px rgba(35,31,32,0.75);
+            -moz-box-shadow: 2px 4px 13px 0px rgba(35,31,32,0.75);
+            width: calc(100% / 3 - 76px / 3);
             padding: 14px;
             border: 1px solid #D6D5D5FF;
             .card_img {
@@ -228,6 +233,59 @@ header {
             }
             
             .card_text {
+                display: flex;
+                align-items: stretch;
+                gap: 14px;
+
+                .card_text_left {
+                    width: 267px;
+
+                    .card_list {
+                        margin-top: 30px;
+
+                        .circle_in {
+                            position: relative;
+    
+                            .circle {
+                                position: absolute;
+                                right: -10px;
+                                top: 3px;
+                                width: 21px;
+                                height: 21px;
+                                border-radius: 50%;
+                                background-color: #EFE8EBFF;
+                            }
+                        }
+                    }
+                }
+
+                .card_text_right {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 45px;
+                    background-color: #EDEDEDFF;
+
+                    ul {
+                        width: 100%;
+                        padding: 25px 7px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-direction: column;
+                        gap: 35px;
+                    }
+
+                    li {
+                        display: flex;
+                        white-space: wrap;
+
+                        span {
+                            margin-right: 5px;
+                        }
+
+                    }
+                }
 
                 padding: 0 0 0 6px;
 
@@ -259,10 +317,11 @@ header {
                         font-weight: 500;
                         font-family: $Gilroy;
                     }
+
                 }
 
                 button {
-                    margin-bottom: 8px;
+                    margin-top: 10px;
                     white-space: nowrap;
                     width: 266px;  
                     padding: 18px;
@@ -288,6 +347,8 @@ header {
         }
 
         .card_red {
+            box-shadow: none;
+            width: calc(100% / 3 - 76px / 3);
             border: 1px solid #BEBDBDFF;
             padding: 41px;
             background-color: #a51f23;
@@ -330,6 +391,161 @@ header {
             }
         }
     }
+
+    .pagination {
+        margin-top: 78px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .more_btn {
+            margin-top: 10px;
+            white-space: nowrap;
+            width: 266px;  
+            padding: 18px;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: $Gilroy;
+            background-color: #A51E22FF;
+        }
+
+        .numbers {
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            button {
+                font-family: $Gilroy;
+                color: rgb(35, 31, 32);
+                line-height: 0.947;
+                font-weight: bold;
+                background-color: transparent;
+            }
+        }
+    }
 }
 // cards
 
+// clients
+#clients {
+    background-color: #D8D8D8FF;
+    padding: 68px 0;
+
+    .main_container {
+        
+            h2 {
+                text-align: center;
+                font-size: 35px;
+                color: #000000;
+                font-weight: bold;
+                font-family: $Gilroy;
+                margin-bottom: 50px;
+            }
+
+            .popular_brand {
+                margin-bottom: 22px;
+
+                
+
+                .brand_links {
+                    padding: 8px 17px;
+                }
+            }
+
+            .popular_brand ,
+            .popular_model {
+                display: flex;
+
+                .brand_title {
+                    font-size: 15px;
+                    font-weight: bold;
+                    font-family: $Gilroy;
+                    color: #000;
+                    margin-right: 20px;
+                }
+            }
+
+            .brand_links, 
+            .brand_links {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                .brand_link {
+                    border-radius: 20px;
+                    padding: 8px 30px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: $Gilroy;
+                    color: #707070FF;
+                    background-color: #F5F8F9FF;
+                }
+            }
+
+    }
+}
+// clients
+
+
+// footer
+footer {
+    background-color: #D8D8D8FF;
+    padding: 47px 0;
+
+    .main_container {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        .footer_logo {
+            max-width: 292px;
+
+            p {
+                margin-top: 38px;
+                font-size: 15px;
+                font-weight: 400;
+                font-family: $Gilroy;
+                color: #000;
+            }
+        }
+
+        .footer_contact {
+            max-width: 404px;
+
+            h4 {
+                font-size: 22px;
+                font-weight: bold;
+                font-family: $Gilroy;
+                color: #000;
+                margin-bottom: 28px;
+            }
+            
+            p {
+                margin-bottom: 15px;
+                font-size: 15px;
+                font-weight: 400;
+                font-family: $Gilroy;
+                color: #000;
+            }
+        }
+
+        .footer_text {
+            max-width: 315px;
+
+            p {
+                font-size: 15px;
+                font-weight: 400;
+                font-family: $Gilroy;
+                color: #000;
+            }
+        }
+    }
+}
+// footer
+
+
+@import 'responsive';
