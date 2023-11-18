@@ -22,11 +22,16 @@ $Gilroy: 'Gilroy', sans-serif;
 
 // modal_black
 .modal_black {
+    display: none;
     padding: 19px;
-    max-width: 720px;
+    width: 720px;
     background-color: #303030FF;
-    display: flex;
     align-items: stretch;
+    z-index: 15;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     .modal_black_left {
         padding: 25px;
@@ -36,7 +41,7 @@ $Gilroy: 'Gilroy', sans-serif;
 
         h2 {
             max-width: 310px;
-            font-size: 18px;
+            font-size: 17px;
             font-family: $Gilroy;
             color: rgb(255, 255, 255);
             font-weight: bold;
@@ -61,16 +66,94 @@ $Gilroy: 'Gilroy', sans-serif;
     .modal_black_right {
         // width: 340px;
         padding: 25px 27px;
-        background-color: #fff;
+        background-color: #fff;    
+        
+        .modal_black_btn {
+            cursor: pointer;
+            position: absolute;
+            z-index: 10;
+            top: 30px;
+            right: 30px;
+            width: 25px;
+            opacity: .5;
+        }
+
         h1 {
-            width: 304px;
+            width: 280px;
             font-size: 26px;
             font-family: $Gilroy;
-            color: #000;
-            text-align: left;
+            color: rgb(0, 0, 0);
             font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            font-size: 11px;
+            font-family: $Gilroy;
+            color: rgb(120, 120, 120);
+            text-transform: uppercase;
+            margin-bottom: 9px;
+        }
+
+        input {
+            padding: 20px;
+            width: 100%;
+            height: 40px;
+            border: 2px solid #DBDDDCFF;
+            margin-bottom: 26px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            height: 53px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 11px;
+            font-size: 21px;
+            font-family: $Gilroy;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            background-color: #363636FF;
+        }
+
+        .button_underline {
+            margin-top: 16px;
+            display: flex;
+            align-items: start;
+            gap: 8px;
+
+            .checkbox {
+                input {
+                    cursor: pointer;
+                    width: 20px;
+                    height: 20px;
+                    accent-color: #363636FF;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                font-family: $Gilroy;
+                color: rgb(120, 120, 120);
+
+                a {
+                    border-bottom: 1px dotted rgb(120, 120, 120);
+                }
+            }
+            
         }
     }
+}
+
+.modal_black.active {
+    display: flex;
 }
 // modal_black
 

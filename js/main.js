@@ -37,3 +37,24 @@ close_btn.addEventListener('click', () => {
 });
 
 
+const btn_red = document.querySelector('.btn_red');
+const modal_black = document.querySelector('.modal_black');
+const modal_black_bg = document.querySelector('.modal_black_bg');
+const modal_black_btn = document.querySelector('.modal_black_btn');
+
+btn_red.addEventListener('click', () => {
+  modal_black.classList.toggle('active');
+  modal_black_bg.classList.toggle('active');
+});
+
+modal_black_bg.addEventListener('click', () => {
+  modal_black.classList.remove('active');
+  modal_black_bg.classList.remove('active');
+});
+
+modal_black_btn.addEventListener('click', () => {
+  modal_black_bg.classList.remove('active');
+  modal_black.classList.remove('active');
+});
+
+

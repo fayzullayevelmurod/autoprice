@@ -18,11 +18,16 @@ button {
 }
 
 .modal_black {
+  display: none;
   padding: 19px;
-  max-width: 720px;
+  width: 720px;
   background-color: #303030;
-  display: flex;
   align-items: stretch;
+  z-index: 15;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .modal_black .modal_black_left {
   padding: 25px;
@@ -32,7 +37,7 @@ button {
 }
 .modal_black .modal_black_left h2 {
   max-width: 310px;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Gilroy", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -53,13 +58,78 @@ button {
   padding: 25px 27px;
   background-color: #fff;
 }
+.modal_black .modal_black_right .modal_black_btn {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  right: 30px;
+  width: 25px;
+  opacity: 0.5;
+}
 .modal_black .modal_black_right h1 {
-  width: 304px;
+  width: 280px;
   font-size: 26px;
   font-family: "Gilroy", sans-serif;
-  color: #000;
-  text-align: left;
+  color: rgb(0, 0, 0);
   font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.modal_black .modal_black_right label {
+  display: block;
+  font-size: 11px;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(120, 120, 120);
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+.modal_black .modal_black_right input {
+  padding: 20px;
+  width: 100%;
+  height: 40px;
+  border: 2px solid #dbdddc;
+  margin-bottom: 26px;
+}
+.modal_black .modal_black_right input:focus {
+  outline: none;
+}
+.modal_black .modal_black_right button {
+  height: 53px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  font-size: 21px;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: #363636;
+}
+.modal_black .modal_black_right .button_underline {
+  margin-top: 16px;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+.modal_black .modal_black_right .button_underline .checkbox input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  accent-color: #363636;
+}
+.modal_black .modal_black_right .button_underline p {
+  font-size: 15px;
+  font-family: "Gilroy", sans-serif;
+  color: rgb(120, 120, 120);
+}
+.modal_black .modal_black_right .button_underline p a {
+  border-bottom: 1px dotted rgb(120, 120, 120);
+}
+
+.modal_black.active {
+  display: flex;
 }
 
 .modal_red_bg {
@@ -953,6 +1023,13 @@ footer .main_container .footer_text p {
   #contact .mobile_block h3 span {
     font-size: 12px;
   }
+  .modal_black {
+    width: 70%;
+    flex-direction: column-reverse;
+  }
+  .modal_black .modal_black_left {
+    text-align: center;
+  }
   .modal_red {
     overflow: hidden;
     width: 480px;
@@ -982,6 +1059,10 @@ footer .main_container .footer_text p {
   }
 }
 @media (max-width: 576px) {
+  .modal_black {
+    width: 90%;
+    padding: 0;
+  }
   header .main_container {
     padding: 35px 0;
   }
